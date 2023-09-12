@@ -11,6 +11,7 @@
 		4E2C82EB2AB021EA00CE65CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C82EA2AB021EA00CE65CB /* ContentView.swift */; };
 		4E2C82ED2AB021EB00CE65CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2C82EC2AB021EB00CE65CB /* Assets.xcassets */; };
 		4E2C82F12AB021EB00CE65CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2C82F02AB021EB00CE65CB /* Preview Assets.xcassets */; };
+		4E2C82F92AB022AA00CE65CB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E2C82FB2AB022AA00CE65CB /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		4E2C82EC2AB021EB00CE65CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E2C82EE2AB021EB00CE65CB /* Books.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Books.entitlements; sourceTree = "<group>"; };
 		4E2C82F02AB021EB00CE65CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E2C82FA2AB022AA00CE65CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4E2C82FC2AB022AE00CE65CB /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4E2C82FD2AB022AF00CE65CB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 				4E2C82EC2AB021EB00CE65CB /* Assets.xcassets */,
 				4E2C82EE2AB021EB00CE65CB /* Books.entitlements */,
 				4E2C82EF2AB021EB00CE65CB /* Preview Content */,
+				4E2C82FB2AB022AA00CE65CB /* Localizable.strings */,
 			);
 			path = Books;
 			sourceTree = "<group>";
@@ -111,6 +116,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				ko,
 			);
 			mainGroup = 4E2C82DC2AB021EA00CE65CB;
 			productRefGroup = 4E2C82E62AB021EA00CE65CB /* Products */;
@@ -128,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2C82F12AB021EB00CE65CB /* Preview Assets.xcassets in Resources */,
+				4E2C82F92AB022AA00CE65CB /* Localizable.strings in Resources */,
 				4E2C82ED2AB021EB00CE65CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +153,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E2C82FB2AB022AA00CE65CB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E2C82FA2AB022AA00CE65CB /* en */,
+				4E2C82FC2AB022AE00CE65CB /* ar */,
+				4E2C82FD2AB022AF00CE65CB /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4E2C82F22AB021EB00CE65CB /* Debug */ = {
