@@ -8,19 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var items = 0
+    @State var isRTL = true
+    @State var price = 10000.56
+    private let numberFormatter: NumberFormatter
+    
+    init() {
+        numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.locale = Locale.current
+        numberFormatter.maximumFractionDigits = 2
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
+        VStack(alignment: .leading) {
+            Image(systemName: "note.text")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Text("items_found \(items)")
+            Text("\(numberFormatter.string(from: price as NSNumber)!)")
+            Button {
+                items += 1
+            } label: {
+                Text("Add")
+            }
+
         }
         .padding()
+        .environment(\.layoutDirection, isRTL ? .rightToLeft : .leftToRight)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environment(\.locale, .init(identifier: "ko"))
+        ContentView()
+            .environment(\.locale, .init(identifier: "en"))
+        ContentView()
+            .environment(\.locale, .init(identifier: "ar"))
+        ContentView()
+            .environment(\.locale, .init(identifier: "id"))
     }
 }
