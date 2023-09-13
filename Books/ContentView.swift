@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State var items = 0
-    @State var isRTL = true
     @State var price = 10000.56
     private let numberFormatter: NumberFormatter
     
@@ -30,13 +29,14 @@ struct ContentView: View {
             Text("\(numberFormatter.string(from: price as NSNumber)!)")
             Button {
                 items += 1
+                print(numberFormatter.locale.identifier)
             } label: {
                 Text("Add")
             }
 
         }
         .padding()
-        .environment(\.layoutDirection, isRTL ? .rightToLeft : .leftToRight)
+        .environment(\.layoutDirection, numberFormatter.locale.identifier == "ar_SA" ? .rightToLeft : .leftToRight)
     }
 }
 

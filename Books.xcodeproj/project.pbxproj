@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E15B7C32AB1A9C500F91EDA /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4E15B7C52AB1A9C500F91EDA /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = hi; path = hi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		4E2C82E52AB021EA00CE65CB /* Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Books.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2C82E82AB021EA00CE65CB /* BooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksApp.swift; sourceTree = "<group>"; };
 		4E2C82EA2AB021EA00CE65CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				ar,
 				ko,
 				id,
+				hi,
 			);
 			mainGroup = 4E2C82DC2AB021EA00CE65CB;
 			productRefGroup = 4E2C82E62AB021EA00CE65CB /* Products */;
@@ -171,6 +174,7 @@
 				4E2C82FC2AB022AE00CE65CB /* ar */,
 				4E2C82FD2AB022AF00CE65CB /* ko */,
 				4EA8FDA82AB160FA00E23091 /* id */,
+				4E15B7C32AB1A9C500F91EDA /* hi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -182,6 +186,7 @@
 				4EA8FDA62AB15FDD00E23091 /* ar */,
 				4EA8FDA72AB15FDE00E23091 /* ko */,
 				4EA8FDA92AB160FA00E23091 /* id */,
+				4E15B7C52AB1A9C500F91EDA /* hi */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
